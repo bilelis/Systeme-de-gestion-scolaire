@@ -1,0 +1,271 @@
+/* ==========================================================================
+   ISAAS SFAX - OFFICIAL INSTITUTIONAL THEME
+   ========================================================================== */
+
+/* Variables / Design Tokens */
+.root {
+    -fx-base: #fdfdfd;
+    -fx-accent: #003366;
+    /* ISAAS Navy Blue */
+    -fx-default-button: #e2e8f0;
+    -fx-focus-color: #003366;
+
+    /* Color Tokens */
+    -color-bg-primary: #fdfdfd;
+    -color-bg-secondary: #f8fafc;
+    -color-brand-primary: #003366;
+    /* ISAAS deep navy */
+    -color-brand-light: #0056b3;
+    -color-brand-accent: #c5a059;
+    /* Academic Gold */
+    -color-text-main: #1e293b;
+    -color-text-muted: #64748b;
+    -color-border: #e2e8f0;
+    -color-success: #10b981;
+    -color-danger: #ef4444;
+}
+
+/* Base Styles */
+.dashboard-root {
+    -fx-background-color: -color-bg-primary;
+}
+
+.view-root {
+    -fx-background-color: -color-bg-primary;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    -fx-background-color: #003366;
+    -fx-padding: 0;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 10, 0, 0, 0);
+}
+
+.sidebar .button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #e2e8f0;
+    -fx-alignment: center-left;
+    -fx-padding: 12 25;
+    -fx-font-weight: normal;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+}
+
+.sidebar .button:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar .button:selected {
+    -fx-background-color: rgba(255, 255, 255, 0.15);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-border-color: white;
+    -fx-border-width: 0 0 0 4;
+}
+
+.logo-box {
+    -fx-padding: 30 20;
+    -fx-alignment: center;
+    -fx-background-color: white;
+    /* Clean white bg for logo */
+    -fx-border-color: -color-border;
+    -fx-border-width: 0 0 1 0;
+}
+
+/* Typography */
+.label {
+    -fx-text-fill: -color-text-main;
+    -fx-font-family: "Segoe UI", "Tahoma", sans-serif;
+}
+
+.form-title {
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -color-brand-primary;
+    -fx-padding: 0 0 20 0;
+}
+
+.section-label {
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -color-text-muted;
+    -fx-padding: 0 0 4 0;
+}
+
+/* Navigation / Dashboard Cards */
+.topbar {
+    -fx-background-color: white;
+    -fx-border-color: -color-border;
+    -fx-border-width: 0 0 1 0;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.03), 5, 0, 0, 2);
+    -fx-padding: 15 25;
+}
+
+.topbar-title {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -color-brand-primary;
+}
+
+.nav-card {
+    -fx-background-color: white;
+    -fx-border-color: -color-border;
+    -fx-border-width: 1;
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.02), 10, 0, 0, 5);
+}
+
+.nav-card:hover {
+    -fx-border-color: -color-brand-primary;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 51, 102, 0.12), 20, 0, 0, 10);
+    -fx-translate-y: -3;
+}
+
+.card-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -color-brand-primary;
+}
+
+.card-subtitle {
+    -fx-font-size: 13px;
+    -fx-text-fill: -color-text-muted;
+}
+
+/* Tables - Official Institutional Style */
+.main-table {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: -color-border;
+    -fx-border-width: 1;
+}
+
+.main-table .column-header {
+    -fx-background-color: #f1f5f9;
+    /* Slate-100 */
+    -fx-padding: 12 8;
+    -fx-border-color: -color-border;
+    -fx-border-width: 0 0 1 0;
+}
+
+.main-table .column-header .label {
+    -fx-text-fill: -color-brand-primary;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+}
+
+.main-table .table-row-cell {
+    -fx-background-color: white;
+    -fx-border-color: -color-border;
+    -fx-border-width: 0 0 1 0;
+}
+
+.main-table .table-row-cell:odd {
+    -fx-background-color: #f8fafc;
+}
+
+.main-table .table-row-cell:filled:selected {
+    -fx-background-color: #e2e8f0;
+    -fx-table-cell-border-color: transparent;
+}
+
+.main-table .table-cell {
+    -fx-text-fill: #1e293b !important;
+    -fx-font-size: 14px;
+    -fx-alignment: center-left;
+    -fx-padding: 10 12;
+    -fx-opacity: 1.0 !important;
+}
+
+/* Form Controls */
+.form-panel {
+    -fx-background-color: white;
+    -fx-border-color: -color-border;
+    -fx-border-width: 0 0 0 1;
+    -fx-padding: 30;
+    -fx-min-width: 340;
+    -fx-pref-width: 340;
+}
+
+.text-field,
+.combo-box,
+.date-picker {
+    -fx-background-color: white;
+    -fx-border-color: -color-border;
+    -fx-border-width: 1;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-padding: 10;
+    -fx-font-size: 14px;
+}
+
+.text-field:focused,
+.combo-box:focused,
+.date-picker:focused {
+    -fx-border-color: -color-brand-primary;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 51, 102, 0.1), 5, 0, 0, 0);
+}
+
+/* Buttons */
+.button {
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+    -fx-padding: 12 24;
+    -fx-background-radius: 8;
+    -fx-transition-duration: 200ms;
+}
+
+.btn-primary {
+    -fx-background-color: -color-brand-primary;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 51, 102, 0.2), 5, 0, 0, 3);
+}
+
+.btn-primary:hover {
+    -fx-background-color: -color-brand-light;
+    -fx-translate-y: -1;
+}
+
+.btn-secondary {
+    -fx-background-color: white;
+    -fx-text-fill: -color-brand-primary;
+    -fx-border-color: -color-brand-primary;
+}
+
+.btn-secondary:hover {
+    -fx-background-color: #f1f5f9;
+}
+
+.btn-danger {
+    -fx-background-color: white;
+    -fx-text-fill: -color-danger;
+    -fx-border-color: -color-danger;
+}
+
+.toolbar {
+    -fx-background-color: white;
+    -fx-border-color: -color-border;
+    -fx-border-width: 1 0 0 0;
+    -fx-padding: 15 30;
+}
+
+/* Ranking Colors in Bulletin */
+.rank-1 {
+    -fx-text-fill: #b45309 !important;
+    -fx-font-size: 15px;
+}
+
+/* Amber-700 */
+.rank-2 {
+    -fx-text-fill: #64748b !important;
+}
+
+/* Slate-500 */
+.rank-3 {
+    -fx-text-fill: #92400e !important;
+}
+
+/* Bronze-ish */
